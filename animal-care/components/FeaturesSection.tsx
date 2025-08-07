@@ -5,7 +5,7 @@ import { FeatureCard } from "./FeatureCard";
 const features = [
   { title: "Adopt a Pet", icon: "adoptt.jpg", path: "/adopt" },
   { title: "Lost & Found", icon: "lost.jpg", path: "/lost-found" },
-  { title: "Vet Appointment Booking", icon: "vet.jpg", path: "/vetAppointment" },
+  { title: "Vet Appointment ", icon: "vet.jpg", path: "/vetAppointment" },
   { title: "Pet Care Tips", icon: "petcare.jpg", path: "/pet-care" },
 ];
 
