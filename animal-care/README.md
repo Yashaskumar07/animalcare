@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🐾 AnimalCare - Fullstack Web App
 
-## Getting Started
+AnimalCare is a full-stack web application that provides a platform for animal lovers to share, adopt, and take care of pets. The project includes user registration, login, authentication, and protected routes.
 
-First, run the development server:
+## 🛠️ Tech Stack
+
+- **Frontend:** Next.js, Tailwind CSS, TypeScript
+- **Backend:** Next.js API routes, Prisma ORM
+- **Database:** PostgreSQL or MySQL (via Prisma)
+- **Auth:** JWT-based authentication with cookies
+
+## ✨ Features
+
+- ✅ User registration and login
+- ✅ Secure password hashing
+- ✅ JWT authentication via cookies
+- ✅ Protected routes (e.g., Home page only accessible after login)
+- ✅ Logout button in Navbar (only visible after login)
+
+- ## 🖼️ Screenshots
+
+
+
+![Homepage](./public/screenshots/home.PNG)
+![Petcare](./public/screenshots/cvare.PNG)
+![Log](./public/screenshots/log.PNG)
+![Lost&found](./public/screenshots/lost.PNG)
+![Vetappointment](./public/screenshots/appointment.PNG)
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/animalcare.git
+cd animalcare
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Set Up Environment Variables
+
+Create a `.env` file:
+
+```env
+DATABASE_URL="your_database_url_here"
+JWT_SECRET="your_jwt_secret_here"
+NEXT_PUBLIC_SUPABASE_URL=https://your-supabase-project.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-public-key-here
+
+EMAIL_USER=youremail@example.com
+EMAIL_PASS=your-email-password-or-app-password
+
+DOCTOR_EMAIL=doctor@example.com
+
+```
+
+### 4. Prisma Setup
+
+```bash
+npx prisma generate
+npx prisma migrate dev --name init
+```
+
+### 5. Run the Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit `http://localhost:3000` to view the app.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📜 License
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is licensed under the MIT License.
