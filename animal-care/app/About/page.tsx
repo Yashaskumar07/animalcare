@@ -1,3 +1,5 @@
+import AnimatedCounter from "@/components/AnimatedCounter";
+
 export default function AboutPage() {
   return (
     <div className="bg-white text-gray-800 min-h-screen">
@@ -22,7 +24,7 @@ export default function AboutPage() {
           </div>
           <div>
             <img
-              src="/images/about-mission.jpg"
+              src="/about/mission.png"
               alt="Our Mission"
               className="rounded-xl shadow-md w-full"
             />
@@ -32,7 +34,7 @@ export default function AboutPage() {
         <div className="grid md:grid-cols-2 gap-12 items-center mt-16">
           <div className="order-2 md:order-1">
             <img
-              src="/images/about-vision.jpg"
+              src="/about/vision.png"
               alt="Our Vision"
               className="rounded-xl shadow-md w-full"
             />
@@ -63,21 +65,21 @@ export default function AboutPage() {
 
       {/* Stats */}
       <section className="py-16 px-6 bg-green-700 text-white text-center">
-        <div className="max-w-5xl mx-auto grid sm:grid-cols-3 gap-10">
-          <div>
-            <h3 className="text-4xl font-bold">10K+</h3>
-            <p className="mt-2 text-lg">Pets Rehomed</p>
-          </div>
-          <div>
-            <h3 className="text-4xl font-bold">500+</h3>
-            <p className="mt-2 text-lg">Trusted Vets</p>
-          </div>
-          <div>
-            <h3 className="text-4xl font-bold">100%</h3>
-            <p className="mt-2 text-lg">Compassion Driven</p>
-          </div>
-        </div>
-      </section>
+  <div className="max-w-5xl mx-auto grid sm:grid-cols-3 gap-10">
+    <div>
+      <AnimatedCounter to={10000} />
+      <p className="mt-2 text-lg">Pets Rehomed</p>
+    </div>
+    <div>
+      <AnimatedCounter to={500} />
+      <p className="mt-2 text-lg">Trusted Vets</p>
+    </div>
+    <div>
+      <AnimatedCounter to={100} />
+      <p className="mt-2 text-lg">Compassion Driven</p>
+    </div>
+  </div>
+</section>
 
       {/* Meet the Team */}
       <section className="py-16 px-6 max-w-5xl mx-auto text-center">
@@ -88,7 +90,7 @@ export default function AboutPage() {
         <div className="flex flex-wrap justify-center gap-8">
           <div className="text-center">
             <img
-              src="/images/team1.jpg"
+              src="/about/team1.jpg"
               alt="Founder"
               className="w-32 h-32 rounded-full mx-auto mb-2 shadow-md"
             />
@@ -97,7 +99,7 @@ export default function AboutPage() {
           </div>
           <div className="text-center">
             <img
-              src="/images/team2.jpg"
+              src="/about/team2.jpg"
               alt="CTO"
               className="w-32 h-32 rounded-full mx-auto mb-2 shadow-md"
             />
@@ -106,7 +108,7 @@ export default function AboutPage() {
           </div>
           <div className="text-center">
             <img
-              src="/images/team3.jpg"
+              src="/about/team3.jpg"
               alt="Vet Advisor"
               className="w-32 h-32 rounded-full mx-auto mb-2 shadow-md"
             />
