@@ -18,7 +18,7 @@ export default function Navbar() {
       : "text-gray-700 hover:text-green-600 transition";
 
   const navItems = [
-    { label: "Home", href: "/" },
+    { label: "Home", href: "/Home" },
     { label: "Add Pet", href: "/adoption" },
     { label: "Appointment", href: "/vetAppointment" },
     { label: "Lost & Found", href: "/lost-found" },

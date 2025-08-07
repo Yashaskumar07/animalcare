@@ -2,18 +2,24 @@
 
 import { motion } from "framer-motion";
 
-const containerVariants = {
-  hidden: { opacity: 0, y: 20 },
+import { Variants } from "framer-motion";
+
+const containerVariants: Variants = {
+  hidden: {
+    opacity: 0,
+    y: 50,
+  },
   visible: {
     opacity: 1,
     y: 0,
     transition: {
       staggerChildren: 0.2,
       duration: 0.6,
-      ease: "easeOut",
+      ease: [0.25, 0.1, 0.25, 1], // ✅ Replace string ease with cubic bezier
     },
   },
 };
+
 
 const childVariants = {
   hidden: { opacity: 0, y: 20 },
@@ -67,7 +73,7 @@ export default function HeroSection() {
           transition={{
             duration: 3,
             repeat: Infinity,
-            ease: "easeInOut",
+            ease: [0.42, 0, 0.58, 1] ,
           }}
         />
       </motion.div>
