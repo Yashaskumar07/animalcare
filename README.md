@@ -39,6 +39,14 @@ Create a `.env` file:
 ```env
 DATABASE_URL="your_database_url_here"
 JWT_SECRET="your_jwt_secret_here"
+NEXT_PUBLIC_SUPABASE_URL=https://your-supabase-project.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-public-key-here
+
+EMAIL_USER=youremail@example.com
+EMAIL_PASS=your-email-password-or-app-password
+
+DOCTOR_EMAIL=doctor@example.com
+
 ```
 
 ### 4. Prisma Setup
