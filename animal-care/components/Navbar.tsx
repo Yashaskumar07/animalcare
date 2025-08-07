@@ -37,7 +37,7 @@ export default function Navbar() {
   <li><Link href="/vetAppointment" className={isActive("/vetAppointment")}>appointment</Link></li>
   <li><Link href="/lost-found" className={isActive("/lost-found")}>lost&found</Link></li>
   <li><Link href="/contact" className={isActive("/contact")}>Contact</Link></li>
-  <li><Link href="/about" className={isActive("/about")}>About</Link></li>
+  <li><Link href="/About" className={isActive("/about")}>About</Link></li>
         </ul>
       </div>
     </nav>
