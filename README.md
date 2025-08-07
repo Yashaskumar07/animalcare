@@ -21,11 +21,11 @@ AnimalCare is a full-stack web application that provides a platform for animal l
 
 
 
-![Homepage](./public/screenshots/homepage.PNG)
-![Medicine Search](./public/screenshots/Medicine-search.PNG)
-![Schemes](./public/screenshots/Schemes.PNG)
-![Symptom Checker](./public/screenshots/symptom-checker.PNG)
-![Profile](./public/screenshots/Profile.PNG)
+![Homepage](./public/screenshots/home.PNG)
+![Petcare](./public/screenshots/cvare.PNG)
+![Log](./public/screenshots/log.PNG)
+![Lost&found](./public/screenshots/lost.PNG)
+![Vetappointment](./public/screenshots/appointment.PNG)
 
 ---
 
