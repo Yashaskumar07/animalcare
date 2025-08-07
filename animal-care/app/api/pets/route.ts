@@ -5,6 +5,10 @@ export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
 
+    if (!body.name || !body.species || !body.age || !body.imageUrl || !body.description || !body.status) {
+      return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
+    }
+
     const pet = await prisma.pet.create({
       data: {
         name: body.name,

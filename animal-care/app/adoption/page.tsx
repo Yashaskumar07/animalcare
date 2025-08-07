@@ -76,7 +76,7 @@ imageUrl = publicUrlData?.publicUrl || "";
     setUploading(false);
 
     if (res.ok) {
-      router.push("/dashboard");
+      router.push("/lost-found");
     } else {
       alert("Failed to submit pet");
     }
