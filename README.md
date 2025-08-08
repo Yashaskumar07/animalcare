@@ -17,6 +17,18 @@ AnimalCare is a full-stack web application that provides a platform for animal l
 - ✅ Protected routes (e.g., Home page only accessible after login)
 - ✅ Logout button in Navbar (only visible after login)
 
+- ## 🖼️ Screenshots
+
+
+
+![Homepage](./public/screenshots/home.PNG)
+![Petcare](./public/screenshots/cvare.PNG)
+![Log](./public/screenshots/log.PNG)
+![Lost&found](./public/screenshots/lost.PNG)
+![Vetappointment](./public/screenshots/appointment.PNG)
+
+---
+
 ## 🚀 Getting Started
 
 ### 1. Clone the Repository
